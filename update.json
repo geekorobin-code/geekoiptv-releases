@@ -2,7 +2,7 @@
   "versionCode": 5,
   "versionName": "1.4",
   "notes": "Corrections Android TV : mosaïque, jaquettes, navigation télécommande et changement audio.",
-  "apkUrl": "https://raw.githubusercontent.com/geekorobin-code/geekoiptv-releases/main/GeekoIPTV-1.4.apk",
+  "apkUrl": "https://github.com/geekorobin-code/geekoiptv-releases/releases/download/v1.4/geeko-v1.4.apk",
   "sha256": "",
   "mandatory": false
 }
