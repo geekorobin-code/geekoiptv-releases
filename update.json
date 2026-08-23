@@ -1,8 +1,8 @@
 {
   "versionCode": 2,
   "versionName": "1.1",
-  "notes": "Mosaique, telechargements, appairage",
-  "apkUrl": "https://github.com/geekorobin-code/geekoiptv-releases/raw/main/GeekoIPTV-1.1.apk",
-  "sha256": "cec85ac974527682bf5ca5de667b7dd1abb411c2932043a6037e61e03e243aa6",
+  "notes": "• Bandeaux de rappel « à regarder plus tard »\n• Correction du changement de piste audio sur certains flux\n• Reprise de lecture plus fiable",
+  "apkUrl": "https://github.com/geekorobin-code/geekoiptv-releases/releases/download/v1.1/GeekoIPTV-1.1.apk",
+  "sha256": "",
   "mandatory": false
 }
