@@ -1,8 +1,8 @@
 {
-  "versionCode": 4,
-  "versionName": "1.3",
-  "notes": "Fiches series et films navigables a la telecommande, recherche films et series en premier, fenetre flottante desactivee sur TV",
-  "apkUrl": "https://github.com/geekorobin-code/geekoiptv-releases/raw/main/GeekoIPTV-1.3.apk",
+  "versionCode": 2,
+  "versionName": "1.1",
+  "notes": "• Bandeaux de rappel « à regarder plus tard »\n• Correction du changement de piste audio sur certains flux\n• Reprise de lecture plus fiable",
+  "apkUrl": "https://github.com/geekorobin-code/geekoiptv-releases/releases/download/v1.1/GeekoIPTV-1.1.apk",
   "sha256": "",
   "mandatory": false
 }
