@@ -1,0 +1,42 @@
+name: Build GeekoIPTV APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Unzip GeekoIPTV project
+        run: |
+          mkdir extracted
+          unzip "GeekoIPTV_2.6.6_BUILD26_GITHUB_APK_AUTO.zip" -d extracted
+          ls -la extracted/GeekoIPTV
+
+      - name: Build APK
+        working-directory: extracted/GeekoIPTV
+        run: gradle assembleDebug
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: GeekoIPTV-2.6.6-BUILD26
+          path: extracted/GeekoIPTV/app/build/outputs/apk/debug/app-debug.apk
